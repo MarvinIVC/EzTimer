@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #2d87f0;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.timer-circle {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+svg {
+    width: 100%;
+    height: 100%;
+}
+
+circle {
+    fill: none;
+    stroke-width: 15;
+    stroke: #e6e6e6;
+}
+
+#progress {
+    stroke: #2d87f0;
+    stroke-dasharray: 754;
+    stroke-dashoffset: 754;
+    transition: stroke-dashoffset 1s linear;
+}
+
+.time-display {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #2d87f0;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+button:hover {
+    background-color: #1a5cae;
+}
+
+.settings {
+    margin-top: 30px;
+}
+
+.settings h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.settings label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input[type="number"] {
+    padding: 5px;
+    width: 50px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.customize-menu {
+    margin-top: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.session-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.session {
+    padding: 10px 15px;
+    background-color: #f4f4f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: grab;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.session:active {
+    cursor: grabbing;
+}
+
+.footer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-text {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.footer-heart {
+    width: 24px;
+    height: 24px;
+    max-width: 24px;
+    max-height: 24px;
+    object-fit: contain;
+    display: block;
+}

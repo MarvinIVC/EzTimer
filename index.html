@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EzTimer - Custom Tomato Timer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EzTimer</h1>
+        <p class="subtitle">Your customizable tomato timer</p>
+
+        <div class="timer-circle">
+            <svg>
+                <circle cx="150" cy="150" r="120"></circle>
+                <circle cx="150" cy="150" r="120" id="progress"></circle>
+            </svg>
+            <div class="time-display">
+                <span id="time">25:00</span>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="start-btn">Start</button>
+            <button id="reset-btn">Reset</button>
+            <button id="customize-btn">Customize Sequence</button>
+        </div>
+
+        <div class="customize-menu hidden">
+            <h2>Customize Sequence (Drag to Rearrange)</h2>
+
+            <div class="session-options" id="session-container">
+                <div class="session" draggable="true" data-session="study">Study 1</div>
+                <div class="session" draggable="true" data-session="short-break">Short Break</div>
+                <div class="session" draggable="true" data-session="study">Study 2</div>
+                <div class="session" draggable="true" data-session="long-break">Long Break</div>
+            </div>
+            <button id="save-sequence">Save Sequence</button>
+            <button id="reset-sequence">Reset Sequence</button>
+        </div>
+
+        <div class="settings">
+            <h2>Customize Timer Durations</h2>
+            <label>Study Duration (minutes):
+                <input type="number" id="study-duration" value="25">
+            </label>
+            <label>Short Break (minutes):
+                <input type="number" id="short-break" value="5">
+            </label>
+            <label>Long Break (minutes):
+                <input type="number" id="long-break" value="15">
+            </label>
+        </div>
+
+        <div class="footer">
+          <div class="footer-text">Crafted by Marvin. Stay Focused!</div>
+          <img class="footer-heart" src="https://cdn.pixabay.com/photo/2017/06/24/20/27/heart-2438746_1280.png" alt="Heart">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
