@@ -9,11 +9,11 @@
 <body>
     <div class="container">
         <div class="stats">
-          <div>🔥 Streak: <span id="streak">0</span></div>
-          <div>⭐ Points: <span id="points">0</span></div>
-          <div id="encouragement" class="encouragement-message"></div>
+            <div>🔥 Streak: <span id="streak">0</span></div>
+            <div>⭐ Points: <span id="points">0</span></div>
+            <div id="encouragement" class="encouragement-message"></div>
         </div>
-        
+
         <h1>EzTimer</h1>
         <p class="subtitle">Your customizable tomato timer</p>
 
@@ -32,11 +32,19 @@
             <button id="start-btn">Start</button>
             <button id="reset-btn">Reset</button>
             <button id="customize-btn">Customize Sequence</button>
+            <button id="shop-btn">Shop</button>
         </div>
 
+        <!-- Shop Menu -->
+        <div class="shop-menu hidden">
+            <h2>🛒 Shop</h2>
+            <ul id="shop-items"></ul>
+            <button id="close-shop">Close Shop</button>
+        </div>
+
+        <!-- Customize Sequence -->
         <div class="customize-menu hidden">
             <h2>Customize Sequence (Drag to Rearrange)</h2>
-
             <div class="session-options" id="session-container">
                 <div class="session" draggable="true" data-session="study">Study 1</div>
                 <div class="session" draggable="true" data-session="short-break">Short Break</div>
@@ -47,6 +55,7 @@
             <button id="reset-sequence">Reset Sequence</button>
         </div>
 
+        <!-- Settings -->
         <div class="settings">
             <h2>Customize Timer Durations</h2>
             <label>Study Duration (minutes):
@@ -60,9 +69,10 @@
             </label>
         </div>
 
+        <!-- Footer -->
         <div class="footer">
-          <div class="footer-text">Made by Marvin, Bowei, Jessie, and Zack for STEAM. Stay Focused!</div>
-          <img class="footer-heart" src="https://cdn.pixabay.com/photo/2017/06/24/20/27/heart-2438746_1280.png" alt="Heart">
+            <div class="footer-text">Made by Marvin, Bowei, Jessie, and Zack for STEAM. Stay Focused!</div>
+            <img class="footer-heart" src="https://cdn.pixabay.com/photo/2017/06/24/20/27/heart-2438746_1280.png" alt="Heart">
         </div>
     </div>
 
