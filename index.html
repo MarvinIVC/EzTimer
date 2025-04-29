@@ -8,6 +8,12 @@
 </head>
 <body>
     <div class="container">
+        <div class="stats">
+          <div>🔥 Streak: <span id="streak">0</span></div>
+          <div>⭐ Points: <span id="points">0</span></div>
+          <div id="encouragement" class="encouragement-message"></div>
+        </div>
+        
         <h1>EzTimer</h1>
         <p class="subtitle">Your customizable tomato timer</p>
 
@@ -17,6 +23,7 @@
                 <circle cx="150" cy="150" r="120" id="progress"></circle>
             </svg>
             <div class="time-display">
+                <div class="theme-icon" id="theme-icon">📚</div>
                 <span id="time">25:00</span>
             </div>
         </div>
