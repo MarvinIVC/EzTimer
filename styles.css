@@ -209,3 +209,78 @@ input[type="number"] {
 .session.drag-over {
   background-color: #fff3d6;
 }
+
+/* ─── SHOP MENU ─────────────────────────────────────────────────────────── */
+.shop-menu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  z-index: 1000;
+}
+
+.shop-menu.hidden {
+  display: none;
+}
+
+.shop-menu h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #2d87f0;
+}
+
+.shop-menu ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+.shop-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.shop-item span {
+  font-size: 1rem;
+  color: #333;
+}
+
+.shop-item button {
+  background: #ffbf00;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.shop-item button:hover:not([disabled]) {
+  background: #e6ac00;
+}
+
+.shop-item button[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+/* ─── DECORATIONS ───────────────────────────────────────────────────────── */
+.wallpaper-deco {
+  /* study-themed Unsplash wallpaper */
+  background-image: url('https://source.unsplash.com/featured/400x400?study');
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: multiply;
+}
+
+.has-confetti .celebration {
+  /* slightly smaller confetti bursts */
+  font-size: 2rem;
+}
+
