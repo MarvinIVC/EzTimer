@@ -162,3 +162,50 @@ input[type="number"] {
     object-fit: contain;
     display: block;
 }
+
+
+/* Add these new styles */
+@keyframes celebrate {
+  0% { transform: translateY(0) scale(1); opacity: 1; }
+  100% { transform: translateY(-100px) scale(0); opacity: 0; }
+}
+
+.celebration {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  pointer-events: none;
+  animation: celebrate 1.5s ease-out forwards;
+}
+
+.stats {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.theme-icon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.session-theme {
+  transition: background-color 0.5s ease;
+}
+
+.encouragement-message {
+  margin-top: 10px;
+  font-style: italic;
+  color: #666;
+  min-height: 20px;
+}
+
+.session.drag-over {
+  background-color: #fff3d6;
+}
